@@ -32,6 +32,19 @@ body {
   height: 300px;
 
 }
+.figcap1{
+position:relative;
+width: 250px;
+background:#00CCFF;
+color:black;
+font-weight:bold;
+text-align: center;
+overflow: hidden;
+left: 500px;
+bottom: 100px;
+font-size: 25;
+
+}
 
 #playlist {
   position: relative;
