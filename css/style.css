@@ -207,24 +207,14 @@ transform-style: preserve-3d;
   text-decoration: none;
 }
 
+.menu_list {
+height: 1000px;
+}
+
 .menu_list li {
   display: table;
-}
-.menu_list li{
   display: table-row;
-}
 
-.menu_list .menu a {
-  display: block;
-  text-decoration: none;
-  padding: .25em;
-  border-bottom: solid 1px #39f;
-  border-right: solid 1px #39f;
-
-}
-
-.menu_list .menu a:hover {
-  color: #fff;
 }
 
 .menu_list  img{
@@ -235,7 +225,6 @@ transform-style: preserve-3d;
 }
 
 .menu_list .football_news {
-  
   width: 300px;
   bottom: 15px;
   left: 0px;
