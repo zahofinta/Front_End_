@@ -1,10 +1,10 @@
-body {
-  background-color: #FFFFFF;
+body {  
   font-family: 'Open Sans',sans-serif;
   position: relative;
   margin: 0 auto;
-  width: 1300px;
-  background-color:#FFFF00;
+  max-width: 1300px;
+  background-image: url('imagee.jpg');
+
 }
 
 
@@ -13,8 +13,16 @@ body {
 }
 
 .header {
+    border-radius: 30px;
+  
     overflow: hidden;
-    background-color: #00CCFF;
+    background: -moz-linear-gradient(top, rgba(135,224,253,1) 12%, rgba(135,224,253,1) 14%, rgba(5,171,224,1) 24%, rgba(5,175,215,1) 32%, rgba(5,185,194,0.75) 50%, rgba(5,188,188,0.68) 55%, rgba(5,171,224,0.53) 66%, rgba(5,171,224,0.5) 68%, rgba(5,171,224,0.25) 87%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,rgba(135,224,253,1)), color-stop(14%,rgba(135,224,253,1)), color-stop(24%,rgba(5,171,224,1)), color-stop(32%,rgba(5,175,215,1)), color-stop(50%,rgba(5,185,194,0.75)), color-stop(55%,rgba(5,188,188,0.68)), color-stop(66%,rgba(5,171,224,0.53)), color-stop(68%,rgba(5,171,224,0.5)), color-stop(87%,rgba(5,171,224,0.25))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#4005abe0',GradientType=0 );
 }
 
 .main_content{
@@ -69,10 +77,18 @@ video {
   height: 2.375rem;
 }
 
+h1 {
+  text-shadow: 0.2em 0.2em 0.05em #333;
+  color: #FFFFFF;
+}
 .h2 {
+  text-shadow: 0.1em 0.1em 0.05em #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 36px;
   text-align: center;
   bottom: 100px;
 }
+
 
 .breaking_news {
   margin:5px;
@@ -361,17 +377,20 @@ transform-style: preserve-3d;
 }
  
 
-.topnews{
+.topnews {
     -moz-column-count: 1;
     -moz-column-gap: 20px;
     -webkit-column-count: 1;
     -webkit-column-gap: 20px;
-    column-count: 1;
-    column-gap: 20px;
+    column-count: 1; 
+    column-gap: 20px; 
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     bottom: 0px;
     float: left;
     left: -10px;
+
 }
 .topnews h1{
   position: relative;
@@ -401,6 +420,7 @@ video {
 }
 
 .menu_list .volleyball_news {
+
   bottom: 20px;
   left:30px;
 }
@@ -419,4 +439,8 @@ video {
  border-color: #00FFCC;
 }
 
-/*cska puska nacional */
+
+/*.kukochimage,.veskoimage,.neimarimage,.cskapuskanacionalimage{
+  width:285px;
+  height: 175px;
+}*/
