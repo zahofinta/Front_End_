@@ -1,33 +1,70 @@
-﻿﻿﻿﻿﻿﻿﻿<DOCTYPE! html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿<DOCTYPE! html>
 <html lang="en">
 <head>
- <title>Дон Пимпон </title>
+<title>Дон Пимпон </title>
 <link rel="stylesheet" type="text/css" href="css\normalize.css">
 <link rel="stylesheet" type="text/css" href="css\style.css">
-
 
 </head>
 <body>
    <header class="header">
     <img class="logo" src="logo\logo.jpg">
+ <!--    <img class="prev-button" src="images\prev-button.jpg">
+    <img class="next-button" src="images\next-button.jpg"> -->
+   <!--   <button class="button"><img class="next-button" src="images\next-button.jpg"></button>  -->
+<!--          <div id="left_arrow" style="widht:40px; height:40px; background: black;">aaaaaaaaaaaaaaaaaaa</div>  -->
+<!-- <img id="left_arrow" src="images\next-button.jpg" ></img> --> 
+ 
 
  <ul id="playlist">
-            <li class="active">
+            <li><img id="left_arrow" src="images\prev-button.jpg" ></img>
+            </li>
+            <li id="video1">
              <video controls src="video\vid.mp4">
             </li>
 
-            <li>
+            <li  id="video2"  >
                 <video controls src="video\vid.mp4">
             </li>
 
-            <li>
+            <li id="video3"   >
               <video controls src="video\vid.mp4">
             </li>
 
-            <li>
+            <li id="video4" >
                 <video controls src="video\vid.mp4">
             </li>   
+
+            <li><img id="right_arrow" src="images\next-button.jpg" ></img>
+            </li>
+
         </ul>
+
+   <ul id="playlist2">
+            <li><img id="left_arrow2" src="images\prev-button.jpg" ></img>
+            </li>
+            <li id="video5">
+             <video controls src="video\vid2.mp4">
+            </li>
+
+            <li  id="video6"  >
+                <video controls src="video\vid2.mp4">
+            </li>
+
+            <li id="video7"   >
+              <video controls src="video\vid2.mp4">
+            </li>
+
+            <li id="video8" >
+                <video controls src="video\vid2.mp4">
+            </li>   
+
+            <li><img id="right_arrow2" src="images\next-button.jpg" ></img>
+            </li>
+
+        </ul>
+        <!-- <img id="left_arrow" src="images\prev-button.jpg" ></img> -->
+       <!--  <img id="right_arrow" src="images\next-button.jpg" ></img> -->
 
 <img class="neimar" src="http://img2.sportal.bg/uploads/news/2014_52/p1/00524805.jpg">
 <figcaption class="figcap1">Новият Неймар отказа на Левски</figcaption>
@@ -46,21 +83,21 @@
       <li>
       <a href="cskapuskanacional.html" class="breaking_news_link2">
       <img src="http://img2.sportal.bg/uploads/news/2014_52/p1/00524760.jpg" class="img2">
-      <figcaption class="figcap3">ЦСКА пуска национал без пари</figcaption>
+      <figcaption class="figcap3">ЦСКА пуска национал без пари<br>дори в Левски</br></figcaption>
       </a>
       </li>
 
       <li>
       <a href="kukoch.html" class="breaking_news_link3">
       <img src="http://news7.bg/pictures/i381939_w648.jpg" class="img3">
-      <figcaption class="figcap4">Кукоч не бил вариант за Киев</figcaption>
+      <figcaption class="figcap4">Кукоч не бил вариант за <br>Динамо Киев</br></figcaption>
       </a>
       </li>
 
        <li>
       <a href="vesko.html" class="breaking_news_link4">
       <img src="http://donbalon.eu/content/pics/578652.jpg" class="img4">
-      <figcaption class="figcap5">Минев си показа рогата и на Коледа</figcaption>
+      <figcaption class="figcap5">Веско Минев си показа рогата и на Коледа</figcaption>
       </a>
       </li>  
   
@@ -130,7 +167,7 @@
     <a href="#">
      <figure>
     <img src="http://donbalon.eu/content/pics/566980.jpg">
-    <figcaption>Пенчев вдъхнови Ресовия за голяма победа</figcaption>
+    <figcaption>Николай Пенчев вдъхнови Ресовия за голяма победа</figcaption>
     </figure>
      </a>
      </li>
@@ -138,6 +175,8 @@
     </section>
     <section class="all_news">
     
+    <nav>
+   
       <ul class="menu_list">
   
           <ul class="football_news">
@@ -151,7 +190,7 @@
           <ul class="basketball_news">
         <h1><em>Баскетболни акценти</em></h1>
           <li><img src="http://donbalon.eu/content/pics/564089.jpg"><a href="#"><h3 class="news_h3">Калоян Иванов на висота при победа</h3></a></li>
-          <li><img src="http://donbalon.eu/content/pics/569399.jpg"><a href="#"><h3 class="news_h3">Тити:Борим се много, но това не е достатъчно</h3> </a> </li>        
+          <li><img src="http://donbalon.eu/content/pics/569399.jpg"><a href="#"><h3 class="news_h3">Тити Папазов: Борим се много, но това не е достатъчно</h3> </a> </li>        
           <li><img src="http://donbalon.eu/content/pics/578777.jpg"> <a href="#"><h3 class="news_h3">Спърс пришпори Рокетс</h3> </a> </li>
           <li><img src="http://donbalon.eu/content/pics/578385.jpg"><a href="#"><h3 class="news_h3">Кадетите финишираха втори</h3> </a></li>
           </ul>          
@@ -161,20 +200,79 @@
           <li><img src="http://donbalon.eu/content/pics/578791.jpg"><a href="#"><h3 class="news_h3">Ябланица - перлата на Предбалкана </h3></a></li>
           <li><img src="http://donbalon.eu/content/pics/578701.jpg"><a href="#"><h3 class="news_h3">Тренто удари Монца, Казийски и Гоцев блестят</h3> </a> </li>        
           <li><img src="http://donbalon.eu/content/pics/578699.jpg"> <a href="#"><h3 class="news_h3">Силен Христо Златанов при победа на Копра</h3> </a> </li>
-          <li><img src="http://donbalon.eu/content/pics/578224.jpg"><a href="#"><h3 class="news_h3">Владо Николов блести при разгром </h3> </a></li>
+          <li><img src="http://donbalon.eu/content/pics/578224.jpg"><a href="#"><h3 class="news_h3">Владо Николов блести при разгром на Лион</h3> </a></li>
           </ul>
          
         </ul>
+      </nav>
     </section>
 
 
-<footer class="index_footer">
+<!-- <footer class="index_footer">
   <p>OT Don Pimponovcite (мже) </p>
 
-</footer>
+</footer> -->
    </main>
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/transform.js"></script>   
+<script src="js/transform.js"></script>  
+<script type="text/javascript">
+$(document).ready(function() {
+  var left = true;
+  var right =true;
+  $('#playlist2').hide();
+  $('#left_arrow,#right_arrow,#left_arrow2,#right_arrow2').on('click', function(){
+    $('#playlist2').show();
+      if (left) {
+      $('#video1').fadeOut(100);
+      $('#video2').fadeOut(200);
+      $('#video3').fadeOut(300);
+      $('#video4').fadeOut(166);
+      $('#right_arrow,#left_arrow').fadeOut(166);
+      $('#video5').fadeIn(100);
+      $('#video6').fadeIn(200);
+      $('#video7').fadeIn(300);
+      $('#video8').fadeIn(166);
+      $('#right_arrow2,#left_arrow2').fadeIn(166);
+      left = false;
+    } else {
+      $('#video5').fadeOut(100);
+      $('#video6').fadeOut(200);
+      $('#video7').fadeOut(300);
+      $('#video8').fadeOut(166);
+      $('#right_arrow2,#left_arrow2').fadeOut(166);
+      $('#video1').fadeIn(100);
+      $('#video2').fadeIn(200);
+      $('#video3').fadeIn(300);
+      $('#video4').fadeIn(166);
+      $('#right_arrow,#left_arrow').fadeIn(166);
+      left = true;
+    };
+
+
+
+
+
+    // setInterval(function(){ 
+    //   if (left) {
+    //   $('#video2').fadeIn(166);
+    //   $('#video1').animate({left: "+=5000"}, 500);
+    //   $('#video3').fadeIn(333);
+    //   $('#video4').fadeIn(500);
+    //   left = false;
+    // } else {
+    //   $('#video2').fadeOut(500);
+    //   $('#video1').animate({left: "-=1000"}, 500);
+    //   $('#video3').fadeOut(333);
+    //   $('#video4').fadeOut(166);
+    //   left = true;
+    // };
+    //  }, 1000);
+    
+
+  });
+    
+});
+</script> 
 </body>
 </html>

@@ -1,11 +1,30 @@
 body {  
   font-family: 'Open Sans',sans-serif;
   position: relative;
-  margin: 0 auto;
-  max-width: 1300px;
+  width: auto;
+  height: auto;
+ /* max-width: 1300px;*/
   background-image: url('imagee.jpg');
 
 }
+
+#left_arrow,#left_arrow2{
+  position: relative;
+  left: 0px;
+  width:70px;
+  height:70px; 
+  
+}
+
+#right_arrow,#right_arrow2{
+  position: relative;
+  right: 0px;
+  width:70px;
+  height:70px; 
+
+}
+
+
 
 
 *{
@@ -16,7 +35,7 @@ body {
     border-radius: 30px;
   
     overflow: hidden;
-    background: -moz-linear-gradient(top, rgba(135,224,253,1) 12%, rgba(135,224,253,1) 14%, rgba(5,171,224,1) 24%, rgba(5,175,215,1) 32%, rgba(5,185,194,0.75) 50%, rgba(5,188,188,0.68) 55%, rgba(5,171,224,0.53) 66%, rgba(5,171,224,0.5) 68%, rgba(5,171,224,0.25) 87%); /* FF3.6+ */
+    background: -moz-linear-gradient(top, rgba(135,224,253,1) 12%, rgba(135,224,253,1) 14%, rgba(5,171,224,1) 24%, rgba(5,175,215,1) 32%, rgba(5,185,194,0.75) 50%, rgba(5,188,188,0.68) 55%, rgba(5,171,224,0.53) 66%, rgba(5,171,224,0.5) 68%, rgba(5,171,224,0.25) 87%); /* FF3.6+ 
     background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,rgba(135,224,253,1)), color-stop(14%,rgba(135,224,253,1)), color-stop(24%,rgba(5,171,224,1)), color-stop(32%,rgba(5,175,215,1)), color-stop(50%,rgba(5,185,194,0.75)), color-stop(55%,rgba(5,188,188,0.68)), color-stop(66%,rgba(5,171,224,0.53)), color-stop(68%,rgba(5,171,224,0.5)), color-stop(87%,rgba(5,171,224,0.25))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* Opera 11.10+ */
@@ -26,7 +45,7 @@ body {
 }
 
 .main_content{
-
+height: auto;
 }
 .logo {
   border-radius: 30px;
@@ -40,7 +59,8 @@ body {
   width: 500px;
   height: 300px;
   left: 350px;
- border-radius: 15px;
+  border-radius: 15px;
+
 }
 .figcap1{
 position:relative;
@@ -49,19 +69,21 @@ background:#00CCFF;
 color:black;
 font-weight:bold;
 text-align: center;
+border-radius: 15px;
 overflow: hidden;
 left: 480px;
 bottom: 100px;
 font-size: 25;
-border-radius: 15px;
+
 }
 
-#playlist {
+#playlist,#playlist2 {
   position: relative;
   left: 50px;
 }
-#playlist li {
+#playlist li,#playlist2 li {
   display:inline;
+  position: relative;
 }
 video {
   width: 20%;
@@ -99,6 +121,7 @@ h1 {
 
 .breaking_news li {
  float:left;
+ border-radius: 15px;
 }
 
 .breaking_news img {
@@ -107,7 +130,6 @@ h1 {
   border:solid;
  border-color: #00FFCC;
 border-radius: 15px;
-
 }
 
 /*.breaking_news:hover img{
@@ -133,6 +155,7 @@ border-radius: 15px;
 
 .figcap1:link {
   text-decoration:none;
+  border-radius: 15px;
 }
 .breaking_news_link figcaption:visited{
   color: black;
@@ -146,7 +169,7 @@ border-radius: 15px;
 .topnews img {
   width: 200px;
   height: 100px;
-
+ border-radius: 15px;
 }
 
 .topnews:hover img{
@@ -164,9 +187,8 @@ transform-style: preserve-3d;
     column-count: 3;
     column-gap: 20px;
     position: relative;
-    bottom: 0px;
+    bottom: 20px;
     float: left;
-
 }
 
 
@@ -204,20 +226,33 @@ transform-style: preserve-3d;
   height: 20px;
   display: table-cell;
   padding: 0px 10px;
-  
 }
 .menu li a{
   text-decoration: none;
 }
 
-.menu_list {
-height: 1000px;
-}
-
 .menu_list li {
   display: table;
+}
+.menu_list li{
   display: table-row;
+}
 
+.menu_list{
+  height: 1000px;
+}
+
+.menu_list .menu a {
+  display: block;
+  text-decoration: none;
+  padding: .25em;
+  border-bottom: solid 1px #39f;
+  border-right: solid 1px #39f;
+
+}
+
+.menu_list .menu a:hover {
+  color: #fff;
 }
 
 .menu_list  img{
@@ -228,6 +263,7 @@ height: 1000px;
 }
 
 .menu_list .football_news {
+  
   width: 300px;
   bottom: 15px;
   left: 0px;
@@ -238,13 +274,14 @@ height: 1000px;
    list-style: none;
    margin: 0 auto;
    border:ridge;
+   overflow: hidden;
   border-color: #00FFCC;
   background-color: #00FFFF;
 }
 .menu_list .football_news  li a {
   text-decoration: none;
   display:block;
-  float:right;
+  float:right; 
   width: 150px;
 }
 
@@ -252,7 +289,7 @@ height: 1000px;
   position: relative;
   width: 300px;
   bottom: 570px;
-  left: 400px;
+  left: 450px;
 }
 
 .menu_list .basketball_news li {
@@ -274,8 +311,8 @@ height: 1000px;
 .menu_list .volleyball_news {
  position: relative;
   width: 300px;
-  bottom: 1120px;
-  left:800px;
+  bottom: 1150px;
+  left:900px;
 }
 
 .menu_list .volleyball_news li {
@@ -293,11 +330,15 @@ height: 1000px;
   float:right;
   width: 150px;
 }
-
-
+/*
+.menu_list .exclusive {
+  position:relative;
+  margin: auto;
+  width: 200px;
+  bottom:3000px;
 .news_h3 {
   color:black;
-}
+}*/
 
 .menu_list a:link {
  text-decoration: none;
@@ -310,6 +351,7 @@ height: 1000px;
 .menu_list a:visited{
   color: black;
 }
+
 
 
 
@@ -347,6 +389,22 @@ height: 1000px;
   
 .figcap1{
   display: none;
+}
+
+#left_arrow,#left_arrow2{
+  position: relative;
+  left: 0px;
+  width:30px;
+  height:30px; 
+  bottom: 50px;
+}
+
+#right_arrow,#right_arrow2{
+  position: relative;
+  right:50px;
+  width:30px;
+  height:30px; 
+  bottom:-40px;
 }
  
 
@@ -399,9 +457,14 @@ video {
 }
 }
 
-/*neimar*/
+@media screen and (min-width : 1224px) {
+    body{
+    width: 100%;
+  }
 
-.article1 img,.article2 img,.aritcle3 img,.article4 img{
+}
+
+/*.article1 img,.article2 img,.aritcle3 img,.article4 img{
   position: relative;
   float: left;
   left: 0px;
@@ -410,7 +473,7 @@ video {
   height: 175px;
   border:solid;
  border-color: #00FFCC;
-}
+}*/
 
 
 /*.kukochimage,.veskoimage,.neimarimage,.cskapuskanacionalimage{
