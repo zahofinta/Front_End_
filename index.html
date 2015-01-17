@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿<DOCTYPE! html>
+﻿﻿﻿﻿﻿﻿﻿﻿<DOCTYPE! html>
 <html lang="en">
 <head>
 <title>Дон Пимпон </title>
@@ -117,8 +117,9 @@
 
     <section class="top_news">
      <h1>Топ новини</h1> 
-    <ul class="topnews">
-    <li>
+    <ul class="topnews" id="topnews">
+
+    <!-- <li>
      <a href="#">
      <figure>
     <img src="http://donbalon.eu/content/pics/578887.jpg">
@@ -170,7 +171,7 @@
     <figcaption>Николай Пенчев вдъхнови Ресовия за голяма победа</figcaption>
     </figure>
      </a>
-     </li>
+     </li> -->
 </ul>
     </section>
     <section class="all_news">
@@ -271,8 +272,35 @@ $(document).ready(function() {
     
 
   });
-    
 });
-</script> 
+</script>
+<script type="text/javascript"> 
+var News = 
+  function News(img, title, link) {
+    this._img = img;
+    this._title = title;
+    this._link = link;
+    }
+  News.prototype.listingNews = function (arrayNews) {
+  for(var number in arrayNews) {
+    var s = '<li>' + '<a href='+ arrayNews[number]._link +'>'+ '<figure>' + '<img src=' + arrayNews[number]._img + '>' + '<figcaption>' + arrayNews[number]._title + '</figcaption>' + '</figure>' + '</li>';
+    var li = document.createElement('li');
+    li.innerHTML = s;
+    document.getElementById("topnews").appendChild(li);
+  }
+  News.prototype.listingNews = function (arrayNews) {
+  for(var number in arrayNews) {
+    var s = '<li>' + '<a href='+ arrayNews[number]._link +'>'+ '<figure>' + '<img src=' + arrayNews[number]._img + '>' + '<figcaption>' + arrayNews[number]._title + '</figcaption>' + '</figure>' + '</li>';
+
+    var li = document.createElement('li');
+    li.innerHTML = s;
+    document.getElementById("topnews").appendChild(li);
+
+  }
+  }
+};
+var topNews =  new News("asdkhgasd", "asdjhasd");
+topNews.listingNews([new News("http://donbalon.eu/content/pics/578887.jpg", "Левски уреди лагер 'за бедняци' в Турция", "#"), new News("http://donbalon.eu/content/pics/578883.jpg", "Томов бесен, че го преметнали 'в негов стил'", "#"), new News("http://donbalon.eu/content/pics/564090.jpg", "Калоян Иванов на висота при победа на Андора", "#"), new News("http://donbalon.eu/content/pics/578859.jpg", "Лукойл отвя Рилецо", "#"), new News("http://donbalon.eu/content/pics/578701.jpg", "Тренто удари Монца, Казийски и Гоцев блестят", "#"), new News("http://donbalon.eu/content/pics/566980.jpg", "Пенчев вдъхнови Ресовия за голяма победа", "#")]);
+</script>
 </body>
 </html>

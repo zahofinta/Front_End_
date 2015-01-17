@@ -58,20 +58,24 @@ height: auto;
   position: relative;
   width: 500px;
   height: 300px;
-  left: 350px;
+  /*left: 350px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 15px;
 
 }
 .figcap1{
 position:relative;
 width: 250px;
-background:#00CCFF;
+background:#70B8FF;
 color:black;
 font-weight:bold;
 text-align: center;
 border-radius: 15px;
 overflow: hidden;
-left: 480px;
+margin-left: auto;
+margin-right: auto;
 bottom: 100px;
 font-size: 25;
 
@@ -115,18 +119,25 @@ h1 {
 .breaking_news {
   margin:5px;
   position: relative;
-  float: left;
+  /*float: center;*/
+  text-align: center;
   bottom:40px;
 }
 
 .breaking_news li {
- float:left;
+ /*float:left;*/
+ /*display: inline-block;*/
+ /*position: relative; */
+ display: inline-table;
  border-radius: 15px;
 }
 
 .breaking_news img {
   width: 285px;
   height: 175px;
+  margin-left: 5px;
+  margin-right: 5px;
+   /* float: center;*/
   border:solid;
  border-color: #00FFCC;
 border-radius: 15px;
@@ -143,9 +154,10 @@ border-radius: 15px;
 .breaking_news figcaption {
 position:relative;
 bottom: 60px;
-left: 20px;
+margin-right: auto;
+margin-left: auto;
 width: 200px;
-background:#00CCFF;
+background:#70B8FF;
 color:black;
 font-weight:bold;
 text-align: center;
@@ -188,30 +200,32 @@ transform-style: preserve-3d;
     column-gap: 20px;
     position: relative;
     bottom: 20px;
-    float: left;
+    /*display: inline-table;*/
+    /*float: left;*/
 }
 
 
 .topnews li{
+/*  display: inline-table;*/
   text-align: center;
    list-style: none;
-  background-color: #00FFFF;
+  background-color: #70B8FF;
   border-radius: 15px;
 }
 
 .topnews li a{
 
   text-decoration: none;
-  display:block;
+  display:inline-block;
 }
 .topnews li a:hover{
-  color: #fff;
+  color: #FFFFFF;
 }
 
  .menu {
   bottom:40px;
   font-size:40px;
-  right:80px;
+  /*right:200px;*/
   display: table;
   margin: 0 auto;
   position: relative;
@@ -220,7 +234,7 @@ transform-style: preserve-3d;
 
  .menu li {
   list-style: none;
-  background-color: #66FFFF;
+  background-color: #70B8FF;
   border-top: solid 1px #039;
   text-align: left;
   height: 20px;
@@ -232,18 +246,18 @@ transform-style: preserve-3d;
 }
 
 .menu_list li {
-  display: table;
-}
-.menu_list li{
   display: table-row;
+
 }
 
+
 .menu_list{
+  display: table;
   height: 1000px;
 }
 
 .menu_list .menu a {
-  display: block;
+  di
   text-decoration: none;
   padding: .25em;
   border-bottom: solid 1px #39f;
@@ -263,10 +277,9 @@ transform-style: preserve-3d;
 }
 
 .menu_list .football_news {
-  
   width: 300px;
   bottom: 15px;
-  left: 0px;
+  float: left;
   position: relative;
 }
 .menu_list .football_news li {
@@ -275,8 +288,8 @@ transform-style: preserve-3d;
    margin: 0 auto;
    border:ridge;
    overflow: hidden;
-  border-color: #00FFCC;
-  background-color: #00FFFF;
+  border-color: #70B8FF;
+  background-color: #70B8FF;
 }
 .menu_list .football_news  li a {
   text-decoration: none;
@@ -297,8 +310,8 @@ transform-style: preserve-3d;
    list-style: none;
    margin: 0 auto;
    border:ridge;
-   border-color: #00FFCC;
-   background-color: #00FFFF;
+   border-color: #70B8FF;
+   background-color: #70B8FF;
 }
 
 .menu_list .basketball_news li a {
@@ -310,9 +323,11 @@ transform-style: preserve-3d;
 
 .menu_list .volleyball_news {
  position: relative;
+ display: inline-block;
   width: 300px;
   bottom: 1150px;
-  left:900px;
+  left: 900px;
+/*  left:900px;*/
 }
 
 .menu_list .volleyball_news li {
@@ -320,8 +335,8 @@ transform-style: preserve-3d;
    list-style: none;
    margin: 0 auto;
    border:ridge;
-   border-color: #00FFCC;
-   background-color: #00FFFF;
+   border-color: #70B8FF;
+   background-color: #70B8FF;
 }
 
 .menu_list .volleyball_news li a {
@@ -346,7 +361,7 @@ transform-style: preserve-3d;
 
 
 .menu_list a:hover{
-  color: #FFFF00;
+  color: #70B8FF;
 }
 .menu_list a:visited{
   color: black;
