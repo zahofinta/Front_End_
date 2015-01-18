@@ -479,6 +479,11 @@ video {
 
 }
 
+.articles p{
+  color:white;
+  background-color: 855D42;
+}
+
 /*.article1 img,.article2 img,.aritcle3 img,.article4 img{
   position: relative;
   float: left;
