@@ -12,7 +12,7 @@ require_once 'config.php';
 </head>
 <body>
    <header class="header">
-    <img class="logo" src="logo\logo.jpg">
+      <a href="index.php"><img class="logo" src="logo\logo.jpg" ></a>
  <!--    <img class="prev-button" src="images\prev-button.jpg">
     <img class="next-button" src="images\next-button.jpg"> -->
    <!--   <button class="button"><img class="next-button" src="images\next-button.jpg"></button>  -->
@@ -70,8 +70,11 @@ require_once 'config.php';
         <!-- <img id="left_arrow" src="images\prev-button.jpg" ></img> -->
        <!--  <img id="right_arrow" src="images\next-button.jpg" ></img> -->
 
-<img class="neimar" src="http://img2.sportal.bg/uploads/news/2014_52/p1/00524805.jpg">
-<figcaption class="figcap1">Новият Неймар отказа на Левски</figcaption>
+<a href="neimar.html" class="breaking_news_link">
+      <img class="neimar" src="http://img2.sportal.bg/uploads/news/2014_52/p1/00524805.jpg">
+      <figcaption class="figcap1">Новият Неймар отказа на Левски</figcaption>
+    
+    </a>
     
   <ul class="breaking_news">
    <h2 class="h2">BREAKING NEWS</h2>
@@ -111,14 +114,13 @@ require_once 'config.php';
 
    <main class="main_content">
 
-        <ul class="menu">
-          <li><a href="index.html">Начало</a></li>
-          <li id="football"><a href="#">Футбол</a></li>
-          <li id="basketball"><a href="#">Баскетбол</a></li>
-          <li id="volleyball"><a href="#">Волейбол</a></li>
-          <li id="lifestyle"><a href="#">Lifestyle</a></li>
+       <ul class="menu">
+          <li><button class="menu_button"><a href="index.php">Начало</a></button></li>
+          <li id="football"><button class="menu_button">Футбол</button></li>
+          <li id="basketball"><button class="menu_button">Баскетбол</button></li>
+          <li id="volleyball"><button class="menu_button">Волейбол</button></li>
+          <li id="lifestyle"><button class="menu_button">Lifestyle</button></li>
           </ul>
-
     <section class="top_news">
      <h1>Топ новини</h1> 
     <ul class="topnews" id="topnews">
@@ -243,33 +245,32 @@ require_once 'config.php';
 <script type="text/javascript">
 $(document).ready(function() {
   var left = true;
-  var right =true;
   $('#playlist2').hide();
   $('#left_arrow,#right_arrow,#left_arrow2,#right_arrow2').on('click', function(){
     $('#playlist2').show();
       if (left) {
-      $('#video1').fadeOut(100);
-      $('#video2').fadeOut(200);
-      $('#video3').fadeOut(300);
-      $('#video4').fadeOut(166);
-      $('#right_arrow,#left_arrow').fadeOut(166);
-      $('#video5').fadeIn(100);
-      $('#video6').fadeIn(200);
-      $('#video7').fadeIn(300);
-      $('#video8').fadeIn(166);
-      $('#right_arrow2,#left_arrow2').fadeIn(166);
+      $('#video1').hide();
+      $('#video2').hide();
+      $('#video3').hide();
+      $('#video4').hide();
+      $('#right_arrow,#left_arrow').hide();
+      $('#video5').show();
+      $('#video6').show();
+      $('#video7').show();
+      $('#video8').show();
+      $('#right_arrow2,#left_arrow2').show();
       left = false;
     } else {
-      $('#video5').fadeOut(100);
-      $('#video6').fadeOut(200);
-      $('#video7').fadeOut(300);
-      $('#video8').fadeOut(166);
-      $('#right_arrow2,#left_arrow2').fadeOut(166);
-      $('#video1').fadeIn(100);
-      $('#video2').fadeIn(200);
-      $('#video3').fadeIn(300);
-      $('#video4').fadeIn(166);
-      $('#right_arrow,#left_arrow').fadeIn(166);
+      $('#video5').hide();
+      $('#video6').hide();
+      $('#video7').hide();
+      $('#video8').hide();
+      $('#right_arrow2,#left_arrow2').hide();
+      $('#video1').show();
+      $('#video2').show();
+      $('#video3').show();
+      $('#video4').show();
+      $('#right_arrow,#left_arrow').show();
       left = true;
     };
 
@@ -311,19 +312,13 @@ var News =
     li.innerHTML = s;
     document.getElementById("topnews").appendChild(li);
   }
-  News.prototype.listingNews = function (arrayNews) {
-  for(var number in arrayNews) {
-    var s = '<li>' + '<a href='+ arrayNews[number]._link +'>'+ '<figure>' + '<img src=' + arrayNews[number]._img + '>' + '<figcaption>' + arrayNews[number]._title + '</figcaption>' + '</figure>' + '</li>';
 
-    var li = document.createElement('li');
-    li.innerHTML = s;
-    document.getElementById("topnews").appendChild(li);
-
-  }
-  }
 };
-var topNews =  new News("asdkhgasd", "asdjhasd");
+var topNews =  new News();
 topNews.listingNews([new News("http://donbalon.eu/content/pics/578887.jpg", "Левски уреди лагер 'за бедняци' в Турция", "#"), new News("http://donbalon.eu/content/pics/578883.jpg", "Томов бесен, че го преметнали 'в негов стил'", "#"), new News("http://donbalon.eu/content/pics/564090.jpg", "Калоян Иванов на висота при победа на Андора", "#"), new News("http://donbalon.eu/content/pics/578859.jpg", "Лукойл отвя Рилецо", "#"), new News("http://donbalon.eu/content/pics/578701.jpg", "Тренто удари Монца", "#"), new News("http://donbalon.eu/content/pics/566980.jpg", "Пенчев вдъхнови Ресовия за голяма победа", "#")]);
 </script>
+<script src="js/filter.js"></script>
 </body>
 </html>
+
+
