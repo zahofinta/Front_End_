@@ -1,0 +1,586 @@
+body {  
+  font-family: 'Open Sans',sans-serif;
+  position: relative;
+  width: auto;
+  height: auto;
+ /* max-width: 1300px;*/
+  background-image: url('imagee.jpg');
+
+}
+
+#left_arrow,#left_arrow2{
+  position: relative;
+  left: 0px;
+  width:70px;
+  height:70px; 
+  
+}
+
+#right_arrow,#right_arrow2{
+  position: relative;
+  right: 0px;
+  width:70px;
+  height:70px; 
+
+}
+
+
+
+
+*{
+  box-sizing:border-box;
+}
+
+.header {
+    border-radius: 30px;
+  
+    overflow: hidden;
+    background: -moz-linear-gradient(top, rgba(135,224,253,1) 12%, rgba(135,224,253,1) 14%, rgba(5,171,224,1) 24%, rgba(5,175,215,1) 32%, rgba(5,185,194,0.75) 50%, rgba(5,188,188,0.68) 55%, rgba(5,171,224,0.53) 66%, rgba(5,171,224,0.5) 68%, rgba(5,171,224,0.25) 87%); /* FF3.6+ 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,rgba(135,224,253,1)), color-stop(14%,rgba(135,224,253,1)), color-stop(24%,rgba(5,171,224,1)), color-stop(32%,rgba(5,175,215,1)), color-stop(50%,rgba(5,185,194,0.75)), color-stop(55%,rgba(5,188,188,0.68)), color-stop(66%,rgba(5,171,224,0.53)), color-stop(68%,rgba(5,171,224,0.5)), color-stop(87%,rgba(5,171,224,0.25))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(135,224,253,1) 12%,rgba(135,224,253,1) 14%,rgba(5,171,224,1) 24%,rgba(5,175,215,1) 32%,rgba(5,185,194,0.75) 50%,rgba(5,188,188,0.68) 55%,rgba(5,171,224,0.53) 66%,rgba(5,171,224,0.5) 68%,rgba(5,171,224,0.25) 87%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#4005abe0',GradientType=0 );
+}
+
+.main_content{
+height: auto;
+}
+.logo {
+  border-radius: 30px;
+  width: 30%;
+  height: 30%;
+
+}
+
+.neimar{
+  position: relative;
+  width: 500px;
+  height: 300px;
+  /*left: 350px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+
+}
+.figcap1{
+position:relative;
+width: 250px;
+background:#70B8FF;
+color:black;
+font-weight:bold;
+text-align: center;
+border-radius: 15px;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+bottom: 100px;
+font-size: 25;
+
+}
+
+#playlist,#playlist2 {
+  position: relative;
+  left: 50px;
+}
+#playlist li,#playlist2 li {
+  display:inline;
+  position: relative;
+}
+video {
+  width: 20%;
+  max-height: 500px;
+  height: auto;
+}
+
+
+.header h1 {
+  float:right;
+  margin: 0;
+  line-height: 1;
+  height: 2.375rem;
+}
+
+h1 {
+  text-shadow: 0.2em 0.2em 0.05em #333;
+  color: #FFFFFF;
+}
+.h2 {
+  text-shadow: 0.1em 0.1em 0.05em #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  bottom: 100px;
+}
+
+
+.breaking_news {
+  margin:5px;
+  position: relative;
+  /*float: center;*/
+  text-align: center;
+  bottom:40px;
+}
+
+.breaking_news li {
+ /*float:left;*/
+ /*display: inline-block;*/
+ /*position: relative; */
+ display: inline-table;
+ border-radius: 15px;
+}
+
+.breaking_news img {
+  width: 285px;
+  height: 175px;
+  margin-left: 5px;
+  margin-right: 5px;
+   /* float: center;*/
+  border:solid;
+ border-color: #00FFCC;
+border-radius: 15px;
+}
+
+/*.breaking_news:hover img{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25); 
+    -ms-transform:scale(1.25); 
+    -o-transform:scale(1.25);
+}*/
+
+
+.breaking_news figcaption {
+position:relative;
+bottom: 60px;
+margin-right: auto;
+margin-left: auto;
+width: 200px;
+background:#70B8FF;
+color:black;
+font-weight:bold;
+text-align: center;
+overflow: hidden;
+border-radius: 15px;
+}
+
+.figcap1:link {
+  text-decoration:none;
+  border-radius: 15px;
+}
+.breaking_news_link figcaption:visited{
+  color: black;
+}
+
+.main_content h1{
+  text-align: center;
+ }
+
+
+.topnews img {
+  width: 200px;
+  height: 100px;
+ border-radius: 15px;
+}
+
+.topnews:hover img{
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(18х10deg);
+transform-style: preserve-3d;
+}
+
+.topnews{
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+    position: relative;
+    bottom: 20px;
+    /*display: inline-table;*/
+    /*float: left;*/
+}
+
+
+.topnews li{
+/*  display: inline-table;*/
+  text-align: center;
+   list-style: none;
+  background-color: #70B8FF;
+  border-radius: 15px;
+}
+
+.topnews li a{
+
+  text-decoration: none;
+  display:inline-block;
+}
+.topnews li a:hover{
+  color: #FFFFFF;
+}
+
+ .menu {
+  bottom:40px;
+  font-size:40px;
+  /*right:200px;*/
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0px;
+}
+
+ .menu li {
+  list-style: none;
+  background-color: #70B8FF;
+  border-top: solid 1px #039;
+  text-align: left;
+  height: 20px;
+  display: table-cell;
+  padding: 0px 10px;
+}
+.menu li a{
+  text-decoration: none;
+}
+
+/*.menu_list li {
+  display: table-row;
+
+}*/
+
+
+.menu_list{
+  display: table;
+  height: 1000px;
+}
+
+.menu_list .menu a {
+  di
+  text-decoration: none;
+  padding: .25em;
+  border-bottom: solid 1px #39f;
+  border-right: solid 1px #39f;
+
+}
+
+.menu_list .menu a:hover {
+  color: #fff;
+}
+
+.menu_list  img{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+/*.menu_list .football_news {
+  width: 300px;
+  bottom: 15px;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+.menu_list .football_news li {
+   text-align: center;
+   list-style: none;
+   margin: 0 auto;
+   border:ridge;
+   overflow: hidden;
+  border-color: #70B8FF;
+  background-color: #70B8FF;
+}
+.menu_list .football_news  li a {
+  text-decoration: none;
+  display:block;
+  float:right; 
+  width: 150px;
+}*/
+
+.football_news {
+  display: inline;
+  width: 300px;
+  bottom: 15px;
+ /* float: left;*/
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .football_news li {
+  display: table;
+  display: table-cell;
+   text-align: center;
+   list-style: none;
+   margin: 0 auto;
+   border:ridge;
+   overflow: hidden;
+  border-color: #70B8FF;
+  background-color: #70B8FF;
+}
+ .football_news  li a {
+  text-decoration: none;
+  display:block;
+  float:right; 
+  width: 150px;
+}
+
+.football_news img,.basketball_news img,.volleyball_news img{
+  width: 285px;
+  height: 185px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+/*.menu_list .basketball_news {
+  position: relative;
+  width: 300px;
+  bottom: 570px;
+  left: 450px;
+}
+
+.menu_list .basketball_news li {
+    text-align: center;
+   list-style: none;
+   margin: 0 auto;
+   border:ridge;
+   border-color: #70B8FF;
+   background-color: #70B8FF;
+}
+
+.menu_list .basketball_news li a {
+  text-decoration: none;
+  display: block;
+  float:right;
+  width: 150px;
+}
+*/
+
+.basketball_news {
+  display: inline;
+  width: 300px;
+  bottom: 15px;
+  text-align: center;
+ /* float: left;*/
+  position: relative;
+}
+ .basketball_news li {
+  display: inline-table;
+  /*display: table-cell;*/
+   list-style: none;
+   margin: 0 auto;
+   overflow: hidden;
+  border-color: #70B8FF;
+  background-color: #70B8FF;
+}
+ .basketball_news  li a {
+  text-decoration: none;
+  display:block;
+  float:right; 
+  width: 150px;
+}
+
+/*.menu_list .volleyball_news {
+ position: relative;
+ display: inline-block;
+  width: 300px;
+  bottom: 1150px;
+  left: 900px;
+}*/
+
+/*.menu_list .volleyball_news li {
+   text-align: center;
+   list-style: none;
+   margin: 0 auto;
+   border:ridge;
+   border-color: #70B8FF;
+   background-color: #70B8FF;
+}*/
+
+/*.menu_list .volleyball_news li a {
+  text-decoration: none;
+  display:block;
+  float:right;
+  width: 150px;
+}*/
+.volleyball_news {
+  display: inline;
+  width: 300px;
+  bottom: 15px;
+/*  float: left;*/
+  position: relative;
+}
+ .volleyball_news li {
+  display: table;
+  display: table-cell;
+   text-align: center;
+   list-style: none;
+   margin: 0 auto;
+   border:ridge;
+   overflow: hidden;
+  border-color: #70B8FF;
+  background-color: #70B8FF;
+}
+ .volleyball_news  li a {
+  text-decoration: none;
+  display:block;
+  /*float:right; */
+  width: 150px;
+}
+
+
+
+
+/*
+.menu_list .exclusive {
+  position:relative;
+  margin: auto;
+  width: 200px;
+  bottom:3000px;
+.news_h3 {
+  color:black;
+}*/
+
+.menu_list a:link {
+ text-decoration: none;
+}
+
+
+.menu_list a:hover{
+  color: #70B8FF;
+}
+.menu_list a:visited{
+  color: black;
+}
+
+
+
+
+
+.index_footer{
+  clear:both;
+}
+
+.index_footer p {
+  color: #00FF00;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+@media screen and  (min-width: 360px) and (max-width: 640px) {
+
+  body{
+    width: 100%;
+  }
+
+  .breaking_news{
+    left: 50px;
+    top: 20px;
+    float: left;
+  }
+  .breaking_news h2{
+    position: relative;
+    left: -80px;
+    bottom: 20px;
+  }
+
+  .neimar{
+    display: none;
+  }
+  
+.figcap1{
+  display: none;
+}
+
+#left_arrow,#left_arrow2{
+  position: relative;
+  left: 0px;
+  width:30px;
+  height:30px; 
+  bottom: 50px;
+}
+
+#right_arrow,#right_arrow2{
+  position: relative;
+  right:50px;
+  width:30px;
+  height:30px; 
+  bottom:-40px;
+}
+ 
+
+.topnews {
+    -moz-column-count: 1;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 20px;
+    column-count: 1; 
+    column-gap: 20px; 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    float: left;
+    left: -10px;
+
+}
+.topnews h1{
+  position: relative;
+  left:-30px;
+}
+
+
+.menu_list .football_news{
+  left: 30px;
+}
+
+/**/
+.menu {
+  display: none;
+}
+
+video {
+  width: 70%;
+  max-height: 500px;
+  height: auto;
+}
+
+.menu_list .basketball_news {
+
+  bottom: 20px;
+  left: 30px;
+}
+
+.menu_list .volleyball_news {
+
+  bottom: 20px;
+  left:30px;
+}
+}
+
+@media screen and (min-width : 1224px) {
+    body{
+    width: 100%;
+  }
+
+}
+
+/*.article1 img,.article2 img,.aritcle3 img,.article4 img{
+  position: relative;
+  float: left;
+  left: 0px;
+  bottom: -10px;
+   width: 385px;
+  height: 175px;
+  border:solid;
+ border-color: #00FFCC;
+}*/
+
+
+/*.kukochimage,.veskoimage,.neimarimage,.cskapuskanacionalimage{
+  width:285px;
+  height: 175px;
+}*/

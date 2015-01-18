@@ -54,19 +54,26 @@
 </header>
 <main class="main_content">
 <ul class="menu">
-<li><a href="index.html">Начало</a></li>
+<li><a href="index.php">Начало</a></li>
 <li><a href="#">Футбол</a></li>
 <li><a href="#">Баскетбол</a></li>
 <li><a href="#">Волейбол</a></li>
 <li><a href="#">Lifestyle</a></li>
 </ul>
-<article class="articles">
+<article class="article4">
 <img src="http://donbalon.eu/content/pics/578000.jpg"class="kukochimage">
 <h1>Кукоч не бил вариант </h1>
 <p>Отговорът на въпроса къде ще играе Тончи Кукоч от пролетта все още няма конкретен отговор. Малка е вероятността хърватският бранител да остане в ЦСКА, но около очаквания му трансфер в Динамо Киев има много условности. Самият футболист твърди, че договорът с един от най-именитите клубове в Източна Европа стои на масата му, но информациите от Украйна са по-различни.
 Според известния телевизионен коментатор Виктор Вацко Динамо изобщо не се интересува от Кукоч. Ето какво написа украинският журналист в профила си в twitter: "Динамо не проявява интерес към Кукоч, за когото се говори цяла седмица. За поста ляв бек клубът има друг кандидат". Защитникът на ЦСКА все пак може да заиграе в Украйна, но с екипа на Днепър.
 Тимът от Днепропетровск се съгласи да продаде хърватския национал Иван Стринич на Наполи и може да вземе за негов заместник сънародника му Кукоч, който се подвизава на същата позиция. Стандард Лиеж също е опция, но белгийците предлагат по-малко пари и от ЦСКА правят всичко възможно да пласират Тончи в Украйна.</p>
 
+<form id="comments_form">
+  <textarea name="comment" type="text"></textarea>
+  <input name="user_name" type="text"/>
+<button id="post">
+  post
+</button>
+</form>
 </article>
 <footer class="index_footer">
 <p>OT Don Pimponovcite HAEHEAHEHE </p>
@@ -74,5 +81,22 @@
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/transform.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#post").click(function(e){
+  	e.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: 'save_comment.php',
+      data: $("#comments_form").serialize(),
+      dataType: 'html'
+    }).done(function(data){
+    	$('#comments_form').append(data);
+      //console.log(data);
+    });
+  });
+  $('#post').trigger('click');
+});
+</script>
 </body>
 </html>
