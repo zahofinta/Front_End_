@@ -54,16 +54,23 @@
 </header>
 <main class="main_content">
 <ul class="menu">
-<li><a href="index.html">Начало</a></li>
+<li><a href="index.php">Начало</a></li>
 <li><a href="#">Футбол</a></li>
 <li><a href="#">Баскетбол</a></li>
 <li><a href="#">Волейбол</a></li>
 <li><a href="#">Lifestyle</a></li>
 </ul>
-<article class="articles">
+<article class="article1">
 <img src="http://img2.sportal.bg/uploads/news/2014_52/p1/00524805.jpg"class="neimarimage">
 <h1>Новият Неймар отказа на Левски</h1>
 <p>Бразилецът Живанилдо Пулгаш да Силва - Жива от Сантос отказва да премине в Левски. "Сините" пратиха официална покана на нападателя, чийто договор с клуба на Пеле изтича на 31 декември. Чрез мениджъри футболистът, който навършва 22 г. на 3 януари, информира, че не е заинтересован. Правата на Жива се държат по 50% от бразилската компания "Ню Сокър" и испанската "Марка Спорт", сред чиито акционери е и Барселона. Идеята бе талантът да се адаптира към европейския футбол с 6 месеца в по-скромен клуб. Жива обаче предпочита да иде в по-голям отбор. Все пак ако бразилецът не си намери скоро тим, а Левски - нападател, е възможно идването на Жива отново да стане актуално. В същото време стана ясно, че Живко Миланов няма намерение да се завръща при "сините" дори руският му тим Том да фалира. Защитникът има добри оферти от други клубове в страната. Левски все пак опитва да вземе Милан Борян, Христо Златински и Александър Барт от Лудогорец, като новият вариант за халфа и защитника е чрез наем.</p>
+<form id="comments_form">
+  <textarea name="comment" type="text"></textarea>
+  <input name="user_name" type="text"/>
+<button id="post">
+  post
+</button>
+</form>
 </article>
 <footer class="index_footer">
 <p>OT Don Pimponovcite HAEHEAHEHE </p>
@@ -71,5 +78,22 @@
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/transform.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#post").click(function(e){
+  	e.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: 'save_comment.php',
+      data: $("#comments_form").serialize(),
+      dataType: 'html'
+    }).done(function(data){
+    	$('#comments_form').append(data);
+      //console.log(data);
+    });
+  });
+  $('#post').trigger('click');
+});
+</script>
 </body>
 </html>

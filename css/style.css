@@ -245,19 +245,22 @@ transform-style: preserve-3d;
   text-decoration: none;
 }
 
-.menu_list li {
-  display: table-row;
-
+/*.menu_list li {
+  d
 }
+*/
 
-
-.menu_list{
-  display: table;
+/*.menu_list{
+   -moz-column-count: 32;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
   height: 1000px;
-}
+}*/
 
 .menu_list .menu a {
-  di
   text-decoration: none;
   padding: .25em;
   border-bottom: solid 1px #39f;
@@ -269,36 +272,81 @@ transform-style: preserve-3d;
   color: #fff;
 }
 
-.menu_list  img{
+.football_news img,.basketball_news img,.volleyball_news img,.lifestyle_news img,.exclusive_comments img{
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
 }
 
-.menu_list .football_news {
+/* .football_news {
+  display: inline-table;
   width: 300px;
   bottom: 15px;
-  float: left;
-  position: relative;
 }
-.menu_list .football_news li {
+ .football_news li {
+  
    text-align: center;
    list-style: none;
    margin: 0 auto;
-   border:ridge;
+   /*border:ridge;
    overflow: hidden;
   border-color: #70B8FF;
   background-color: #70B8FF;
+ 
 }
-.menu_list .football_news  li a {
+ .football_news  li a {
   text-decoration: none;
-  display:block;
-  float:right; 
+  display: inline;
   width: 150px;
 }
 
-.menu_list .basketball_news {
+.basketball_news {
+  display: inline-table;
+  width: 300px;
+  bottom: 15px;
+}
+ .basketball_news li {
+  
+   text-align: center;
+   list-style: none;
+   margin: 0 auto;
+   /*border:ridge;
+   overflow: hidden;
+  border-color: #70B8FF;
+  background-color: #70B8FF;
+ 
+}
+ .basketball_news  li a {
+  text-decoration: none;
+  display: inline;
+  width: 150px;
+}*/
+
+.volleyball_news,.football_news,.basketball_news,.lifestyle_news,.exclusive_comments {
+  display: inline-table;
+  width: 300px;
+  bottom: 15px;
+}
+ .volleyball_news li,.football_news li,.basketball_news li,.lifestyle_news li,.exclusive_comments li {
+  
+   text-align: center;
+   list-style: none;
+   margin: 0 auto;
+   /*border:ridge;*/
+   overflow: hidden;
+  border-color: #70B8FF;
+  background-color: #70B8FF;
+ 
+}
+ .volleyball_news  li a,.basketball_news li a,.football_news li a,.lifestyle_news li a,.exclusive_comments li a {
+  text-decoration: none;
+  display: inline;
+  width: 150px;
+}
+
+
+/*.menu_list .basketball_news {
   position: relative;
   width: 300px;
   bottom: 570px;
@@ -327,7 +375,7 @@ transform-style: preserve-3d;
   width: 300px;
   bottom: 1150px;
   left: 900px;
-/*  left:900px;*/
+/*  left:900px;
 }
 
 .menu_list .volleyball_news li {
@@ -344,7 +392,7 @@ transform-style: preserve-3d;
   display:block;
   float:right;
   width: 150px;
-}
+}*/
 /*
 .menu_list .exclusive {
   position:relative;
@@ -381,20 +429,19 @@ transform-style: preserve-3d;
   text-align: center;
 }
 
-@media screen and  (min-width: 360px) and (max-width: 640px) {
+@media only screen and  (min-width: 360px) and (max-width: 640px) {
 
   body{
     width: 100%;
   }
 
   .breaking_news{
-    left: 50px;
-    top: 20px;
+   
     float: left;
   }
   .breaking_news h2{
     position: relative;
-    left: -80px;
+    left: 0px;
     bottom: 20px;
   }
 
@@ -407,19 +454,15 @@ transform-style: preserve-3d;
 }
 
 #left_arrow,#left_arrow2{
-  position: relative;
-  left: 0px;
+ 
   width:30px;
   height:30px; 
-  bottom: 50px;
 }
 
 #right_arrow,#right_arrow2{
-  position: relative;
-  right:50px;
+ 
   width:30px;
   height:30px; 
-  bottom:-40px;
 }
  
 
@@ -434,7 +477,7 @@ transform-style: preserve-3d;
     margin-left: auto;
     margin-right: auto;
     bottom: 0px;
-    float: left;
+ /*   float: left;*/
     left: -10px;
 
 }
@@ -444,8 +487,12 @@ transform-style: preserve-3d;
 }
 
 
-.menu_list .football_news{
-  left: 30px;
+.football_news,.basketball_news,.volleyball_news,.lifestyle_news,.exclusive_comments{
+  position: relative;
+  display: inline;
+ 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -459,17 +506,17 @@ video {
   height: auto;
 }
 
-.menu_list .basketball_news {
+/*.basketball_news {
 
   bottom: 20px;
   left: 30px;
 }
 
-.menu_list .volleyball_news {
+ .volleyball_news {
 
   bottom: 20px;
   left:30px;
-}
+}*/
 }
 
 @media screen and (min-width : 1224px) {
@@ -477,13 +524,6 @@ video {
     width: 100%;
   }
 
-}
-
-.articles p{
-  color:white;
-  background-color: 855D42;
-  text-align: justify;
- padding-right: 10px;
 }
 
 /*.article1 img,.article2 img,.aritcle3 img,.article4 img{
